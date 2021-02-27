@@ -1,5 +1,12 @@
+import { Header, Main } from "./components";
+
 function App() {
-  return <div></div>;
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 }
 
 export default App;
