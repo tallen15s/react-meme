@@ -6,6 +6,7 @@ const qc = new QueryClient();
 
 const Main = () => {
   function handleSubmit(event) {
+    event.preventDefault();
     console.log(event.target.elements[0].value);
     console.log(event.target.elements[1].value);
   }
