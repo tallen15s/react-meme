@@ -13,6 +13,7 @@ const Form = ({ submitHandler }) => (
       <label htmlFor=""></label>
       <input type="text" />
     </div>
+    <button>Submit</button>
   </form>
 );
 
