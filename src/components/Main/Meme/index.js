@@ -13,12 +13,15 @@ function renderRandomImage({ data: { memes } }) {
 
 const Meme = () => {
   async function fetchMemeImages() {
+    // AWAIT (or come back) when this PROMISE is SETTLED
     const memes = await api.index();
     return memes;
   }
 
+  // DESTRUCTURE the desired keys from the object returned from useQuery
   const { isSuccess, data } = useQuery("memes", fetchMemeImages);
 
+  // Ternary - question ?  yes : no
   return isSuccess ? renderRandomImage(data) : <p>Loading...</p>;
 };
 
