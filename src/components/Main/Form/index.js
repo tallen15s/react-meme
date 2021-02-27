@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 
+// Destructure props - MUST match the name for parent
 const Form = ({ submitHandler }) => (
   <form
     onSubmit={submitHandler}
