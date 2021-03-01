@@ -15,7 +15,7 @@ const Main = () => {
   }
 
   return (
-    <main>
+    <main className="ml-60">
       {/* Passing props */}
       <Form submitHandler={handleSubmit} />
       <QueryClientProvider client={qc}>

@@ -14,7 +14,9 @@ const Form = ({ submitHandler }) => (
       <label htmlFor=""></label>
       <input type="text" />
     </div>
-    <button>Submit</button>
+    <button className="bg-blue-400 hover:bg-red-700 rounded text-lg">
+      Submit
+    </button>
   </form>
 );
 
