@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 import Form from "./Form";
 import Meme from "./Meme";
 
@@ -20,6 +21,7 @@ const Main = () => {
       <Form submitHandler={handleSubmit} />
       <QueryClientProvider client={qc}>
         <Meme />
+        <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
     </main>
   );
