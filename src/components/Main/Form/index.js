@@ -4,7 +4,7 @@ import Input from "./Input";
 const Form = ({ submitHandler }) => (
   <form
     onSubmit={submitHandler}
-    className="flex flex-col items-center gap-2 pb-4"
+    className="flex flex-col items-center gap-3 pb-5"
   >
     {[{ label: "Top Text" }, { label: "Bottom Text" }].map(
       ({ label }, index) => (

@@ -1,1 +1,1 @@
-export { default as TextContext } from "./TextContext";
+export { default as TextContext } from "./Text";
